@@ -1,0 +1,82 @@
+$bg-color : #333;
+$font-color : #fff;
+$primary-color : #008ed6;
+$dark-overlay :rgba(0,0,0, 0.5);
+$icon-size : 30px;
+
+body {
+  background: $bg-color;
+  color : $font-color;
+}
+
+
+.navbar {
+  border-bottom: $primary-color;
+  opacity: 0.9;
+}
+
+
+#home-section {
+  background: url('../img/image1.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay {
+    background-color : $dark-overlay;
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    width: 100%;
+    min-height: 700px;
+
+    input[type="submit"]:hover {
+      color : $primary-color;
+
+    }
+  }
+  .home-inner {
+    padding-top : 150px;
+  }
+
+  .card-form {
+    opacity: 0.8;
+  }
+
+  .fa {
+    color : $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+
+  input {
+    font-size: 12px;
+  }
+}
+
+
+#explore-section, #share-section {
+  .fa {
+    color : #fff;
+    background: #333;
+    padding: 4px;
+    border-radius : 5px;
+    font-size : $icon-size;
+  }
+  a.btn-outline-light:hover {
+    color : $primary-color;
+  }
+}
+
+
+#create-section {
+  .fa {
+    color : $primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
